@@ -1,0 +1,25 @@
+.pagination {
+    padding: 2rem 2rem;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .pagination-item {
+    padding: 0 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.pagination-item.disabled {
+    cursor: text;
+    color: #777777;
+    pointer-events: none;
+}
+
+.pagination-item.active {
+    background-color: #a0a0a0;
+    border: solid 0.1rem black;
+}

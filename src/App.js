@@ -8,6 +8,7 @@ import Submit from './components/Submit/Submit';
 import getDatasToLS, { setDatasToLS, removeDataToLS } from './components/Helper';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Add from './components/Add/Add';
+import Pagination from './components/Pagination/Pagination';
 
 const App = () => {
   const [links, setLinks] = useState(getDatasToLS("links"));
@@ -17,7 +18,7 @@ const App = () => {
   const totalPage = Math.ceil(links.length / 5);
   const indexOfLast = currentPage * 5;
   const indexOfFirst = indexOfLast - 5;
-  const currentLinks = links.slice(indexOfFirstPos, indexOfLastPos);
+  const currentLinks = links.slice(indexOfFirst, indexOfLast);
   //This projects is not over. Just pagination process left.
   //This projects is not over. Just pagination process left.
   //This projects is not over. Just pagination process left.
@@ -43,6 +44,9 @@ const App = () => {
     let data2 = datas.sort((a, b) => (b.points > a.points) ? 1 : -1);
     setLinks(data2);
   }
+  const removeLink = (link) => {
+    setPopup({ msg: link.name, lnk: link, visible: true });
+  }
   const doRemoveLink = (link) => {
     const data = links.filter(item =>
       item !== link
@@ -62,9 +66,7 @@ const App = () => {
     setLinks(newArr);
     removeDataToLS("links", newArr);
   }
-  const removeLink = (link) => {
-    setPopup({ msg: link.name, lnk: link, visible: true });
-  }
+
   return (
     <>
       <BrowserRouter>
@@ -74,7 +76,8 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Submit />
-            <List links={links} setLinkVote={setLinkVote} sortAtoZ={sortAtoZ} sortZtoA={sortZtoA} removeLink={removeLink} />
+            <List links={currentLinks} setLinkVote={setLinkVote} sortAtoZ={sortAtoZ} sortZtoA={sortZtoA} removeLink={removeLink} />
+            <Pagination totalPage={totalPage} currentPage={currentPage} setCurrentPage={setCurrentPage} />
           </Route>
           <Route path="/add">
             <Add setAlert={setAlert} addLink={addLink} />
