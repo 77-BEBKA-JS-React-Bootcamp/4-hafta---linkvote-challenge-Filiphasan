@@ -19,10 +19,6 @@ const App = () => {
   const indexOfLast = currentPage * 5;
   const indexOfFirst = indexOfLast - 5;
   const currentLinks = links.slice(indexOfFirst, indexOfLast);
-  //This projects is not over. Just pagination process left.
-  //This projects is not over. Just pagination process left.
-  //This projects is not over. Just pagination process left.
-  //This projects is not over. Just pagination process left.
 
   useEffect(() => {
     setTimeout(() => {
