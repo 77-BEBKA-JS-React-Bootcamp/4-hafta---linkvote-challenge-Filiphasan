@@ -1,0 +1,38 @@
+.submit-container {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-bottom: solid 0.5rem #a0a0a0;
+}
+
+.submit-box {
+    width: 100%;
+    padding: 1rem;
+    border: #a0a0a0 0.1rem solid;
+    background-color: #ebebeb;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.submit-box .submit-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2rem;
+    border: solid 0.2rem #a0a0a0;
+    border-radius: 0.5rem;
+}
+
+.submit-box .submit-link:hover {
+    background-color: #d6d2d2;
+}
+
+.submit-box .submit-link img {
+    width: 40px;
+}
+
+.submit-box h2 {
+    font-size: 3.5rem;
+    margin-left: 4rem;
+    text-transform: uppercase;
+}

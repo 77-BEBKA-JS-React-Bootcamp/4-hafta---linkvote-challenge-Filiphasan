@@ -1,0 +1,60 @@
+.return-list {
+    font-size: 1.75rem;
+    padding: 3rem 1rem;
+}
+
+.return-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.add-form {
+    padding: 1rem;
+}
+
+.add-form form {
+    margin-top: 2rem;
+}
+
+.add-form h2 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+.add-form button {
+    margin-left: auto;
+    display: block;
+    padding: 1rem 3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.add-form .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.add-form .form-group label {
+    font-size: 1.75rem;
+    padding-left: 0.75rem;
+}
+
+.add-form .form-group input {
+    padding: 1rem 0.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    border: solid 0.1rem #a0a0a0;
+}
+
+.form-group input::placeholder {
+    color: #a0a0a0;
+}

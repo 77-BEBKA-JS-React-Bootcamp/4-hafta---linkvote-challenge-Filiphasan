@@ -1,0 +1,26 @@
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-bottom: solid 0.1rem;
+}
+
+.nav-container h1 {
+    font-size: 4.5rem;
+    color: #666666;
+}
+
+.nav-container h1 span {
+    color: #a0a0a0;
+}
+
+.nav-container p {
+    font-size: 2.5rem;
+}
+
+.nav-container p span {
+    font-weight: 200;
+}

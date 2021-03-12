@@ -1,0 +1,92 @@
+.link {
+    display: flex;
+    align-items: stretch;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #f5f4f4;
+    border-radius: 1rem;
+}
+
+.link .link-point {
+    padding: 1rem 2rem;
+    background-color: #ebebeb;
+    margin-right: 1rem;
+    border: solid 0.2rem #a0a0a0;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link .link-point h3 {
+    font-size: 4.5rem;
+}
+
+.link .link-point p {
+    font-size: 2rem;
+}
+
+.link .link-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.link .link-info h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.link .link-info p {
+    font-size: 1.65rem;
+    color: #a0a0a0;
+}
+
+.link-info .link-vote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-info .link-vote button {
+    border: none;
+    background-color: inherit;
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    cursor: pointer;
+    outline: none;
+}
+
+.link-info .link-vote button:hover {
+    color: #757575;
+}
+
+.link>button {
+    visibility: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.link:hover>.highlight-btn {
+    position: absolute;
+    visibility: visible;
+    left: 100%;
+    transform: translate(-50%, -80%);
+    border: solid 0.3rem white;
+    color: white;
+    background-color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+.select-order {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.select-order select {
+    appearance: unset;
+    width: 100%;
+    border: solid 0.1rem #a0a0a0;
+    border-radius: 0.5rem;
+    background-color: #ebebeb;
+    font-size: 1.75rem;
+    padding: 0.75rem 1rem;
+    outline: none;
+}
+
+.select-order select:focus {
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.select-order p {
+    font-size: 1.75rem;
+    position: absolute;
+    left: calc(100% - 4.75rem);
+    padding: 0.5rem 1rem;
+    border-left: solid 0.1rem #a0a0a0;
+    cursor: context-menu;
+}
